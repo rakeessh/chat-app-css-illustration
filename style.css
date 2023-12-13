@@ -198,22 +198,18 @@ body {
 
 .sender_msg1 p,
 .sender_msg2 p {
-    transform: scale(0);
+    transform: translate(-110%);
     animation: msgEffect var(--anime);
 
 }
 
-.sender_msg1 p:nth-child(2) {
-    animation-delay: .5s;
-}
-
 @keyframes msgEffect {
     0% {
-        transform: scale(0);
+        transform: translate(-110%);
     }
 
     100% {
-        transform: scale(1);
+        transform: translate(0%);
     }
 }
 
@@ -234,26 +230,18 @@ body {
     background-color: #fff;
     color: var(--DDV);
     border-bottom-right-radius: 0px;
-    transform: scale(0);
+    transform: translate(200px);
     animation: userSideAnime var(--anime);
 
 }
 
-.user_side_msg1 .lorem0 {
-    animation-delay: 1.6s !important;
-}
-
-.user_side_msg1 .lorem {
-    animation-delay: 1.8s;
-}
-
 @keyframes userSideAnime {
     0% {
-        transform: scale(0);
+        transform: translate(200px);
     }
 
     100% {
-        transform: scale(1);
+        transform: translate(0px);
     }
 }
 
@@ -269,15 +257,7 @@ body {
     border-radius: 8px;
     border-bottom-right-radius: 0px;
     transform: scale(0);
-    animation: imageEffect 1s ease-in 0.8s 1 normal forwards;
-}
-
-.msg_image img:nth-child(2) {
-    animation-delay: 1s;
-}
-
-.msg_image img:nth-child(3) {
-    animation-delay: 1.4s;
+    animation: imageEffect 1s ease-in 0s 1 normal forwards;
 }
 
 @keyframes imageEffect {
@@ -295,7 +275,6 @@ body {
         background-color: var(--dgvl);
         color: var(--mv);
         border-bottom-left-radius: 0px;
-        animation-delay: 1.8s;
     }
 
 
@@ -328,14 +307,6 @@ body {
 .tick_box span:nth-child(3) {
     font-size: 16px;
     font-weight: 700;
-}
-
-.tickbox1 {
-    animation-delay: 1.9s !important;
-}
-
-.tickbox2 {
-    animation-delay: 2s;
 }
 
 @keyframes tickBoxEffect {
@@ -401,7 +372,6 @@ body {
     margin: 20px 0px;
     transform: translateY(-150vh);
     animation: NotetitleEffect var(--anime);
-    
 }
 
 .note p {
@@ -410,7 +380,6 @@ body {
     color: var(--dgv);
     transform: translate(900px);
     animation: paraeffect var(--anime);
-    animation-delay: 0.6s;
 }
 
 @keyframes NotetitleEffect {
