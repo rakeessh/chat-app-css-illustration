@@ -145,26 +145,27 @@ body {
 
 .avatar_box {
     width: 30px;
-
-    .avatar {
-        width: 100%;
-        border-radius: 50%;
-        border: 2px solid #fff;
-    }
+}
+.avatar_box .avatar {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
 }
 
 .avatar_title {
     flex: 1;
 
-    .avatar_name {
-        font-size: 16px;
-        color: var(--white);
-    }
+    
+}
 
-    .active_status {
-        font-size: 12px;
-        color: var(--pv);
-    }
+.avatar_name {
+    font-size: 16px;
+    color: var(--white);
+}
+
+.active_status {
+    font-size: 12px;
+    color: var(--pv);
 }
 
 .dots {
@@ -183,15 +184,15 @@ body {
     padding: 5px;
     overflow: hidden;
 
-    p {
-        font-size: 11px;
-        display: inline-block;
-        margin: 5px 0px 4px 0px;
-        padding: 5px;
-        border-radius: 10px;
-        max-width: 70%;
+}
 
-    }
+.mobile_screen p {
+    font-size: 11px;
+    display: inline-block;
+    margin: 5px 0px 4px 0px;
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 70%;
 
 }
 
@@ -226,15 +227,15 @@ body {
 .user_side_msg1 {
     overflow: hidden;
 
-    p {
-        float: right;
-        background-color: #fff;
-        color: var(--DDV);
-        border-bottom-right-radius: 0px;
-        transform: translate(200px);
-        animation: userSideAnime var(--anime);
+}
 
-    }
+.user_side_msg1 p {
+    float: right;
+    background-color: #fff;
+    color: var(--DDV);
+    border-bottom-right-radius: 0px;
+    transform: translate(200px);
+    animation: userSideAnime var(--anime);
 
 }
 
@@ -290,14 +291,13 @@ body {
 }
 
 
-.sender_msg2 {
-    p {
+.sender_msg2 p {
         background-color: var(--dgvl);
         color: var(--mv);
         border-bottom-left-radius: 0px;
         animation-delay: 9s;
     }
-}
+
 
 .tick_box {
     width: 85%;
@@ -313,21 +313,21 @@ body {
     opacity: 0;
     animation: tickBoxEffect var(--anime);
 
-    .tickMark {
-        border: 0.4px solid var(--VLM);
-        padding: 8px;
-        border-radius: 100%;
-    }
+}
 
-    span {
-        font-size: 12px;
-    }
+.tick_box .tickMark {
+    border: 0.4px solid var(--VLM);
+    padding: 8px;
+    border-radius: 100%;
+}
 
-    span:nth-child(3) {
-        font-size: 16px;
-        font-weight: 700;
-    }
+.tick_box span {
+    font-size: 12px;
+}
 
+.tick_box span:nth-child(3) {
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .tickbox1 {
@@ -356,32 +356,32 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
-    input{
-        border: none;
-        outline: none;
-        padding: 5px 0px;
-        width: 100%;
-    }
-    input::placeholder{
-        font-size: 16px;
-        color: var(--gb);
-    }
+.typing_box input{
+    border: none;
+    outline: none;
+    padding: 5px 0px;
+    width: 100%;
+}
+.typing_box input::placeholder{
+    font-size: 16px;
+    color: var(--gb);
+}
 
-    .send_key {
-        padding: 6px;
-        border-radius: 50%;
-        background: var(--VDDV);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 6px;
-        cursor: pointer;
-    }
+.send_key {
+    padding: 6px;
+    border-radius: 50%;
+    background: var(--VDDV);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6px;
+    cursor: pointer;
+}
 
-    .send_key img {
-        filter: brightness(100);
-    }
+.send_key img {
+    filter: brightness(100);
 }
 
 .note {
@@ -391,24 +391,26 @@ body {
     margin: 5px;
     text-align: center;
 
-    h1 {
-        color: var(--vddv);
-        font-weight: 700;
-        font-size: 40px;
-        margin: 20px 0px;
-        transform: translateY(-150vh);
-        animation: NotetitleEffect var(--anime);
-        animation-delay: 13s;
-    }
+    
+}
 
-    p {
-        line-height: 2rem;
-        font-weight: 600;
-        color: var(--dgv);
-        transform: translate(900px);
-        animation: paraeffect var(--anime);
-        animation-delay: 12s;
-    }
+.note h1 {
+    color: var(--vddv);
+    font-weight: 700;
+    font-size: 40px;
+    margin: 20px 0px;
+    transform: translateY(-150vh);
+    animation: NotetitleEffect var(--anime);
+    animation-delay: 13s;
+}
+
+.note p {
+    line-height: 2rem;
+    font-weight: 600;
+    color: var(--dgv);
+    transform: translate(900px);
+    animation: paraeffect var(--anime);
+    animation-delay: 12s;
 }
 
 @keyframes NotetitleEffect {
